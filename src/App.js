@@ -1,11 +1,11 @@
-import Navigation from "./Components/Navigation";
+import NavBar from './Components/Navigation/NavBar'
 
 function App() {
-  return (
-    <div>
-      <Navigation />
-    </div>
-  );
+    return (
+        <div>
+            <NavBar />
+        </div>
+    )
 }
 
-export default App;
+export default App
