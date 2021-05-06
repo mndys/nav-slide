@@ -27,7 +27,7 @@
       "react-app/jest"
     ]
   },
-  "Prettier": {
+  "prettier": {
     "trailingComma": "es5",
     "tabWidth": 4,
     "semi": false,
