@@ -3,10 +3,12 @@ import styled from "styled-components"
 export default function Navigation() {
     return (
         <Nav>
-           <li>Home</li> 
-           <li>About</li> 
-           <li>Downloads</li> 
-           <li>Contact</li> 
+           <ul>
+               <li>Home</li>
+               <li>About</li>
+               <li>Downloads</li>
+               <li>Contact</li>
+           </ul>
         </Nav>
     )
 }
@@ -22,6 +24,7 @@ const Nav = styled.nav`
     left: 0;
     height: 4em;
 
+    ul{
     li {
         text-decoration: none;
         color: inherit;
@@ -30,5 +33,6 @@ const Nav = styled.nav`
         :first-of-type{
             flex: 1;
         }
+    }
     }
 `
