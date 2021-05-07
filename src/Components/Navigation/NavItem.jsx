@@ -12,6 +12,8 @@ export default function NavItem({ handleMouseEnter, title, children }) {
 const Item = styled.li`
     position: relative;
     padding: var(--size-m) var(--size-xl);
+    width: 7rem;
+    text-align: center;
 
     a {
         color: inherit;
