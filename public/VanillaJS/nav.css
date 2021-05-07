@@ -1,0 +1,29 @@
+html {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: var(--color-primary);
+    padding: 0 2rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    gap: 0 2em;
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    position: relative;
+    padding: var(--size-m) var(--size-xl);
+    width: 7rem;
+    text-align: center;
+}
