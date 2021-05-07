@@ -1,8 +1,13 @@
 import styled from 'styled-components/macro'
 
-export default function NavItem({ handleMouseEnter, title, children }) {
+export default function NavItem({
+    handleMouseEnter,
+    handleMouseLeave,
+    title,
+    children,
+}) {
     return (
-        <Item onMouseEnter={handleMouseEnter}>
+        <Item onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <a href="/">{title}</a>
             {children}
         </Item>

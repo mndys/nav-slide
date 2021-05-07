@@ -11,10 +11,14 @@ export default function NavBar() {
     }
 
     return (
-        <Nav onMouseLeave={() => setIsOpen(null)}>
+        <Nav>
             <ReactLogo style={{ height: '2rem' }} />
             <ul>
-                <NavItem title="Link 1" handleMouseEnter={(e) => toggleOpen(e)}>
+                <NavItem
+                    title="Link 1"
+                    handleMouseEnter={(e) => toggleOpen(e)}
+                    handleMouseLeave={() => setIsOpen(null)}
+                >
                     {isOpen === 'Link 1' && (
                         <Dropdown>
                             <ul>
@@ -26,7 +30,11 @@ export default function NavBar() {
                         </Dropdown>
                     )}
                 </NavItem>
-                <NavItem title="Link 2" handleMouseEnter={(e) => toggleOpen(e)}>
+                <NavItem
+                    title="Link 2"
+                    handleMouseEnter={(e) => toggleOpen(e)}
+                    handleMouseLeave={() => setIsOpen(null)}
+                >
                     {isOpen === 'Link 2' && (
                         <Dropdown>
                             <ul>
@@ -39,7 +47,11 @@ export default function NavBar() {
                     )}
                 </NavItem>
 
-                <NavItem title="Link 3" handleMouseEnter={(e) => toggleOpen(e)}>
+                <NavItem
+                    title="Link 3"
+                    handleMouseEnter={(e) => toggleOpen(e)}
+                    handleMouseLeave={() => setIsOpen(null)}
+                >
                     {isOpen === 'Link 3' && (
                         <Dropdown>
                             <ul>
@@ -52,7 +64,11 @@ export default function NavBar() {
                     )}
                 </NavItem>
 
-                <NavItem title="Link 4" handleMouseEnter={(e) => toggleOpen(e)}>
+                <NavItem
+                    title="Link 4"
+                    handleMouseEnter={(e) => toggleOpen(e)}
+                    handleMouseLeave={() => setIsOpen(null)}
+                >
                     {isOpen === 'Link 4' && (
                         <Dropdown>
                             <ul>
