@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styled from 'styled-components/macro'
 import NavItem from './NavItem'
+import { ReactComponent as ReactLogo } from '../../img/react.svg'
 
 export default function NavBar() {
     const [isOpen, setIsOpen] = useState(null)
@@ -11,6 +12,7 @@ export default function NavBar() {
 
     return (
         <Nav onMouseLeave={() => setIsOpen(null)}>
+            <ReactLogo style={{ height: '2rem' }} />
             <ul>
                 <NavItem title="Link 1" handleMouseEnter={(e) => toggleOpen(e)}>
                     {isOpen === 'Link 1' && (
@@ -72,6 +74,7 @@ const Nav = styled.nav`
     justify-content: end;
     align-items: center;
     background-color: var(--color-primary);
+    padding: 0 2rem;
 
     ul {
         list-style: none;
@@ -89,8 +92,6 @@ const Dropdown = styled.div`
     top: 2.4em;
     right: 0;
     background-color: var(--color-bg);
-    width: 10em;
-    text-align: right;
 
     ul {
         height: 100%;
