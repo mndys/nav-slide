@@ -57,7 +57,7 @@ function handleMouseEnter(event) {
     event.target.append(dropdownContainer)
 }
 
-function handleMouseLeave(event) {
+function handleMouseLeave() {
     dropdownContainer.remove()
 }
 
